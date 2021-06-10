@@ -7,12 +7,12 @@ void main() => runApp(MyApp());
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    SystemChrome.setEnabledSystemUIOverlays([]);
+    SystemChrome.setEnabledSystemUIOverlays([SystemUiOverlay.bottom]);
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: "Alcool ou Gasolina",
       theme: ThemeData(
-        primaryColor: Colors.cyan[900],
+        primaryColor: Colors.deepOrange,
         brightness: Brightness.dark,
       ),
       home: MainScrenn(),
